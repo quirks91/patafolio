@@ -263,7 +263,7 @@ nav {
   width: 5.4rem;
   height: 4.4rem;
   border: none;
-  background: url(/imgs/search.png) no-repeat center center;
+  background: url(imgs/search.png) no-repeat center center;
   background-size: 54% 52%;
   outline: none;
   cursor: pointer;
@@ -324,7 +324,7 @@ main{}
   transform: translateY(-50%);
   border-color: white;
   border-radius: 50%;
-  background: url(/imgs/leftarrow.png) no-repeat center center;
+  background: url(imgs/leftarrow.png) no-repeat center center;
   background-size: 1.4rem 2rem;
   z-index:10;
 }
@@ -456,7 +456,7 @@ main{}
   border-radius: 50%;
   background: url(imgs/blackleftarrow.jpg) no-repeat center center;
   background-size: 1.4rem 2rem;
-  z-index:100;
+  z-index:10;
 }
 .wear-slider .slick-next{
   position: absolute;
@@ -467,7 +467,7 @@ main{}
   border-radius: 50%;
   background: url(imgs/blackrightarrow.jpg) no-repeat center center;
   background-size: 1.4rem 2rem;
-  z-index:100;
+  z-index:10;
 }
 /* Hotkey Section CSS */
 .hotkey{
