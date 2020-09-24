@@ -1,0 +1,709 @@
+@font-face {
+  font-family: 'BMJUA';
+  font-style: normal;
+  font-weight: normal;
+  src: url(https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMJUA.woff) format('woff');
+}
+@font-face { 
+	font-family: 'Noto Sans KR'; 
+	font-style: normal; 
+	font-weight: 100; 
+	src: url(https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.woff2) format('woff2'), 
+		url(https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.woff) format('woff'), 
+		url(https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.otf) format('opentype'); 
+}
+@font-face { 
+	font-family: 'Noto Sans KR'; 
+	font-style: normal; 
+	font-weight: 300; 
+	src: url(https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.woff2) format('woff2'), 
+		url(https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.woff) format('woff'), 
+		url(https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.otf) format('opentype'); 
+}
+@font-face {
+	font-family: 'Noto Sans KR'; 
+	font-style: normal; 
+	font-weight: 400; 
+	src: url(https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff2) format('woff2'), 
+		url(https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff) format('woff'), 
+		url(https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.otf) format('opentype'); 
+}
+@font-face { 
+	font-family: 'Noto Sans KR'; 
+	font-style: normal; 
+	font-weight: 500; 
+	src: url(https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.woff2) format('woff2'), 
+		url(https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.woff) format('woff'), 
+		url(https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.otf) format('opentype'); 
+}
+@font-face { 
+	font-family: 'Noto Sans KR'; 
+	font-style: normal; 
+	font-weight: 700; 
+	src: url(https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.woff2) format('woff2'), 
+		url(https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.woff) format('woff'), 
+		url(https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.otf) format('opentype'); 
+}
+@font-face { 
+	font-family: 'Noto Sans KR'; 
+	font-style: normal; 
+	font-weight: 900; 
+	src: url(https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.woff2) format('woff2'), 
+		url(https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.woff) format('woff'), 
+		url(https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.otf) format('opentype'); 
+}
+
+ /* Common CSS */
+html{font-size:10px;}
+h2{
+    font-family: 'BMJUA';
+    font-weight: 500;
+    font-size: 3.4rem;
+}
+h3{
+  font-family: 'BMJUA';
+  font-weight: 500;
+  font-size: 2.4rem;
+  color: #424242;
+}
+h4{font-family: 'BMJUA';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.6rem;
+  color: #616161;
+}
+p{
+    font-family: 'Noto Sans KR';
+    font-weight: 600;
+    font-size: 1.4rem;
+    color: #616161;
+    line-height: 2.2rem;
+}
+.price{
+  font-family: 'Noto Sans KR';
+  font-weight: 400;
+  font-size: 1.4rem;
+  color: #616161;
+}
+.sale{
+  font-family: 'Noto Sans KR';
+  font-weight: 400;
+  font-size: 1.4rem;
+  color: red;
+}
+body{
+  padding-top:14rem;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+footer {
+  margin-top:auto;
+}
+
+ /* Header CSS */
+ header {
+  display: flex;
+  flex-flow: wrap;
+  position: fixed;
+  top:0;
+  height: 14rem;
+  width: 100%; 
+ }
+ .fixed {
+   z-index: 100;
+   background-color: white;
+   box-shadow: 0 2px 3px rgba(167, 160, 160, 0.295);
+ }
+ .header-top {
+   display: flex;
+   /* align-items: center; */
+   justify-content: space-between;
+   width: 192rem;
+   height: 7rem;
+ }
+ /* Header Event CSS */
+ .event {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex: 1;
+   height: 7rem;
+ }
+ .event li{
+  font-family: 'Noto Sans KR';
+  font-weight: 400;
+  font-size: 1.4rem;
+ }
+ .event li b{
+  font-family: 'BMJUA';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.4rem;
+ }
+ .event li b:hover{
+  font-family: 'BMJUA';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.4rem;
+  color: #ff6e40;
+ }
+
+ /* Header Logo CSS */
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex:1;
+    height: 7rem;
+  }
+ .logo img {}
+
+ /* Header Utility CSS */
+ .utility {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex:1;
+   height: 7rem;
+  }
+ .utility li{}
+ .utility li a {
+   position: relative;
+   padding-left: 2.4rem;
+   font-family: 'Noto Sans KR';
+   font-weight: 500;
+   font-size: 1.4rem;
+   color: #616161;
+ }
+ .utility li a:hover {
+   position: relative;
+   padding-left: 2.4rem;
+   font-family: 'Noto Sans KR';
+   font-weight: 700;
+   font-size: 1.4rem;
+   color: #ff6e40;
+ }
+ .utility li a img {
+   width: 1.9rem;
+   height: 2.1rem;
+   -webkit-filter: opacity(.5) drop-shadow(0 0 0 #616161);
+   filter: opacity(.5) drop-shadow(0 0 0 #616161)
+ }
+ .utility li a b{
+   position: absolute;
+   top: -3.2rem;
+   right: -0.6rem;
+   font-size: 6rem;
+   color: #ff6e40;
+ }
+/* Nav CSS */
+nav {
+  border-top: 1px solid #eeeeee;
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 192rem;
+  height: 7rem;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 192rem;
+}
+.nav li{
+  position: relative;
+}
+.nav li a {
+  padding: 0rem 2.7rem;
+  font-family: 'BMJUA';
+  font-weight: 500;
+  font-size: 1.8rem;
+  color: #757575;
+}
+.nav li a:hover {
+  font-family: 'BMJUA';
+  font-weight: 500;
+  font-size: 1.8rem;
+  color: #ff6e40;
+}
+.nav li:after{
+  content:"";
+  position: absolute;
+  bottom:-4px;
+  left:50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 3px;
+  background: #ff6e40;
+  transition: all .5s ease-out;
+}
+.nav li:hover::after{
+  width:50%;
+}
+.search{
+  display: flex;
+  position: absolute;
+  right: 15.2rem;
+  width: 24rem;
+  height: 4.4rem;
+  border: 1px solid #c9c9c9;
+}
+.search input{
+  width: 24rem;
+  padding-left: 1rem;
+  outline: none;
+  border : none;
+}
+.search button{
+  width: 5.4rem;
+  height: 4.4rem;
+  border: none;
+  background: url(/imgs/search.png) no-repeat center center;
+  background-size: 54% 52%;
+  outline: none;
+  cursor: pointer;
+}
+input:focus::-webkit-input-placeholder, 
+textarea:focus::-webkit-input-placeholder { 
+  /* WebKit browsers */ color:transparent; 
+}
+/* Main */
+main{}
+/* Visual Section CSS */
+.visual{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 192rem;
+  height: 50rem;
+}
+.visual a{}
+.visual a img{
+  margin: auto;
+}
+.slick-dots {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom:4%;
+}
+.slick-dots button{
+  width: 2rem;
+  height: 2rem;
+  margin: 0.5rem;
+  padding: 0;
+  border: 2px solid white;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0);
+  text-indent: -9999px;
+  cursor: pointer;
+  outline:none;
+}
+.slick-dots li.slick-active button{
+  background-color:white;
+}
+.slick-arrow{
+  border:1px solid red;
+  cursor: pointer;
+  width: 5rem;
+  height: 5rem;
+}
+.visual .slick-prev{
+  position: absolute;
+  left:19%;
+  top:50%;
+  transform: translateY(-50%);
+  border-color: white;
+  border-radius: 50%;
+  background: url(/imgs/leftarrow.png) no-repeat center center;
+  background-size: 1.4rem 2rem;
+  z-index:10;
+}
+.visual .slick-next{
+  position: absolute;
+  right:19%;
+  top:50%;
+  transform: translateY(-50%);
+  border-color: white;
+  border-radius: 50%;
+  background: url(/imgs/rightarrow.png) no-repeat center center;
+  background-size: 1.4rem 2rem;
+  z-index:10;
+}
+/* Item Section CSS */
+.item{
+}
+.item-btn{
+  display: flex;
+  justify-content: center;
+  margin-top:10rem;
+  width: 192rem;
+}
+.item-btn li{
+  position: relative;
+  padding: 2rem;
+  color:#c2c2c2; 
+}
+.item-btn li.active {
+  color:#424242;
+}
+.item-btn li h2{
+  font-size: 2.4rem;
+  margin-bottom:1rem;
+}
+
+.item-tabs{
+  display: flex;
+  justify-content: center;
+}
+.item-tabs ul{
+  display: none;
+  width: 120rem;
+  font-size:  2rem;
+}
+.item-tabs ul.active {
+  display: flex;
+}
+.item-tabs ul li{
+  position: relative;
+  width: 24rem;
+  height: 37rem;
+  margin-left:2rem;
+}
+.item-tabs .product{
+  display: block;
+  margin: auto;
+  width: 21.4rem;
+  height: 21.4rem;
+}
+.item-tabs .color-select{
+  width: 21.4rem;
+  height: 6rem;
+  cursor: pointer;
+}
+.item-tabs .color-select img{
+  width: 2.4rem;
+  height: 2.4rem;
+  margin-top: 2.4rem;
+  margin-bottom: 0.9rem;
+}
+.item-tabs p{
+  position: absolute;
+  top:31.4rem;
+}
+.all-item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 17.7rem;
+  height: 4rem;
+  border-radius: 17px 17px;
+  background-color: #424242;
+}
+.all-item a{
+  font-family: 'Noto Sans KR';
+  font-weight: 500;
+  font-size: 1.6rem;
+  color:white;
+}
+/* Wear Section CSS */
+.wear{
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  margin-top: 13rem; 
+}
+.wear h2{
+  display: flex;
+  justify-content: center;
+  width: 120rem;
+  margin-bottom:4.3rem;
+  text-align: center;
+}
+.wear-slider{
+  display: flex;
+  justify-content: center ;
+  /* position: relative; */
+  width: 116rem;
+  height: 62rem;
+}
+.wear-slider h3 {
+  padding-top: 3rem;
+  padding-bottom: 2.8rem;
+}
+.wear-slider .slick-arrow{
+  border:1px solid red;
+  cursor: pointer;
+  width: 5rem;
+  height: 5rem;
+}
+.wear-slider .slick-prev{
+  position: absolute;
+  left:-10%;
+  top:50%;
+  transform: translateY(-50%);
+  border-color: black;
+  border-radius: 50%;
+  background: url(imgs/blackleftarrow.jpg) no-repeat center center;
+  background-size: 1.4rem 2rem;
+  z-index:100;
+}
+.wear-slider .slick-next{
+  position: absolute;
+  right:-10%;
+  top:50%;
+  transform: translateY(-50%);
+  border-color: black;
+  border-radius: 50%;
+  background: url(imgs/blackrightarrow.jpg) no-repeat center center;
+  background-size: 1.4rem 2rem;
+  z-index:100;
+}
+/* Hotkey Section CSS */
+.hotkey{
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  flex-flow: wrap;
+  position: relative;
+  width: 192rem;
+  height: 51.4rem;
+  margin-top: 13rem;
+  background-color:#eeeeee;
+}
+.hotkey h2{
+  width: 192rem;
+  margin-top:6%;
+  text-align: center;
+  font-size:3.4rem;
+}
+.hotkey-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow:wrap;
+  position: absolute;
+  margin-top:10%;
+  width: 100rem;
+  height: 20rem;
+}
+.hotkey-item{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 19.6rem;
+  height: 6.4rem;
+  margin:1.3rem;
+  border: 2px solid #3d5afe;
+  border-radius: 17px 17px;
+}
+.hotkey-item p{
+  margin-left:-6px;
+  margin-bottom: -2px;
+  font-family: 'BMJUA';
+  font-weight: 400;
+  font-size: 2.4rem;
+  color: #ff6e40; 
+}
+/* Acitivity Section CSS */
+.activity{
+  display: flex;
+  justify-content: center;
+  flex-flow:wrap;
+  margin-top:13rem;
+  width: 192rem;
+}
+.activity h2{
+  display: flex;
+  justify-content: center;
+  width: 120rem;
+  margin-bottom:4.3rem;
+  text-align: center;
+}
+.activity-slider{
+  display: flex;
+  justify-content: center;
+  width: 120rem;
+}
+.activity-slider h3{
+  margin-top:2.7rem;
+}
+.activity-slider p{
+  font-weight: 400;
+}
+/* Insight Section CSS */
+.insight{  
+  display: flex;
+  justify-content: center;
+  flex-flow: wrap;
+  position: relative;
+  width: 192rem;
+  height: 130rem;
+  margin-top: 13rem;
+  background-color:#eeeeee;
+}
+.insight h2{
+  display: flex;
+  justify-content: center;
+  width: 120rem;
+  margin-top:6.8rem;
+  margin-bottom:7.6rem;
+  text-align: center;
+}
+.insight-box{
+  /* display: flex; */
+  /* justify-content: center; */
+  /* flex-flow: wrap; */
+  width: 120rem;
+  column-width: 350px;
+  column-gap: 15px;
+}
+.insight-box h3{
+  font-family: 'Noto Sans KR'; 
+	font-style: normal; 
+	font-weight: 500; ;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.insight-box h4{
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+.insight-box p{
+  font-weight: 400;
+}
+.insight-box figure{
+  display: inline-block;
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+.insight-box figure img{
+  width: 100%;
+}
+.insight-box figure figcaption{
+  margin-top: 11px;
+}
+/* Footer CSS */
+footer{
+  width: 192rem;
+  height: 44rem;
+}
+.footer-top{
+  display: flex;
+  justify-content: center;
+  flex-flow: wrap;
+  margin: auto;
+  width: 120rem;
+  height: 25.8rem;
+  margin-top:4rem;
+}
+footer .about{
+  display: flex;
+  justify-content: space-between;
+  width: 120rem;
+}
+footer h3{
+  font-size:1.6rem;
+  margin-bottom:3rem;
+}
+footer h4 {
+  font-family: 'NotoSansKR-Regular';
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+footer li{
+  font-family: 'NotoSansKR-Regular';
+  font-size: 1.4rem;
+  color: #808080;
+  line-height: 2.2rem;
+}
+.sns{
+  display: flex;
+  height: 3.4rem;
+}
+.sns figure{
+  margin: 0.6rem;
+}
+.footer-top h4{
+  color: #3d5afe;
+}
+
+.footer-middle{
+  display: flex;
+  justify-content: center;
+  width: 120rem;
+  margin:auto;
+}
+.footer-middle ul{
+  display: flex;
+}
+.footer-middle ul li{
+  margin: 0 1rem;
+}
+.footer-middle b{
+  color: #ff6e40;
+}
+.footer-bottom ul{
+  display: flex;
+  justify-content: center;
+  flex-flow:wrap;
+  margin:0 auto;
+  margin-bottom:3rem;
+  width: 110rem;
+  margin-top: 4rem;
+}
+.footer-bottom li{
+  padding: 0 0.5rem;
+  font-family: 'NotoSansKR-Medium';
+  font-size: 1.4rem;
+  line-height: 2.2rem;
+}
+.footer-bottom a{
+  font-weight: 700;
+}
+.footer-bottom h4{
+  text-align: center;
+}
+
+/* SUB PAGE CSS */
+.subinner{
+  width: 120rem;
+  height: 120rem;
+  margin:auto;
+}
+.subvisual{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120rem;
+  height: 35rem;
+  font-family: 'NotoSansKR-Bold';
+  font-weight: 800;
+  font-size:4.8rem;
+  color:white;
+  background: url(imgs/subvisual.jpg);
+  margin-bottom:3rem;
+}
+.subaside{
+  width: 10rem;
+  border:1px solid red;
+}
+.subaside h3{
+  margin-bottom:1rem;
+}
+.subaside li p{
+  font-weight: 500;
+  font-size:1.5rem;
+  line-height: 2.4rem;
+}
