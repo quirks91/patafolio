@@ -245,6 +245,7 @@ nav {
 .nav li:hover::after{
   width:50%;
 }
+
 .search{
   display: flex;
   position: absolute;
@@ -678,8 +679,9 @@ footer li{
 
 /* SUB PAGE CSS */
 .subinner{
+  display: flex;
+  flex-flow: wrap;
   width: 120rem;
-  height: 120rem;
   margin:auto;
 }
 .subvisual{
@@ -696,14 +698,93 @@ footer li{
   margin-bottom:3rem;
 }
 .subaside{
+  /* display: flex; */
   width: 10rem;
-  border:1px solid red;
+  box-sizing: border-box;
 }
 .subaside h3{
+  padding-bottom:1rem;
+  border-bottom: 1px solid black;
   margin-bottom:1rem;
 }
 .subaside li p{
   font-weight: 500;
-  font-size:1.5rem;
   line-height: 2.4rem;
+}
+.subaside ul li a:hover,a.on{
+  color: #ff6e40;
+}
+.subfilter{
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 110rem;
+  height: 3.6rem;
+  padding-left:13rem;
+  padding-bottom:2rem;
+  box-sizing: border-box;
+}
+.subfilter ul {
+  display: flex;
+}
+.subfilter ul li{
+  padding: 0 1.6rem;
+}
+.subfilter ul li:last-child{
+  position: absolute;
+  right:0;
+}
+.subfilter ul li a{
+  font-weight: 400;
+}
+.subfilter ul li a.on{
+  font-weight: 600;
+  color:#616161;
+}
+.subfilter b{
+  font-weight: 700;
+  cursor: pointer;
+}
+.subfilter h4{
+}
+.sub-newitemtab{
+  width: 110rem;
+  box-sizing: border-box;
+}
+.sub-newitemtab ul{
+  display: flex;
+  justify-content: space-around;
+  flex-flow: wrap;
+  width: 110rem;
+  padding:0 10rem;
+  font-size: 2rem;
+  box-sizing: border-box;
+}
+.sub-newitemtab ul.active {
+}
+.sub-newitemtab ul li{
+  position: relative;
+  height: 37rem;
+  margin-left:2rem;
+}
+.sub-newitemtab .product{
+  display: block;
+  margin: auto;
+  width: 21.4rem;
+  height: 21.4rem;
+}
+.sub-newitemtab .color-select{
+  width: 21.4rem;
+  height: 6rem;
+  cursor: pointer;
+}
+.sub-newitemtab .color-select img{
+  width: 2.4rem;
+  height: 2.4rem;
+  margin-top: 2.4rem;
+  margin-bottom: 0.9rem;
+}
+.sub-newitemtab p{
+  position: absolute;
+  top:31.4rem;
 }

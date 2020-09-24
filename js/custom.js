@@ -81,6 +81,16 @@ $(".btn13").on("click",function(){
   $(".item8>img").attr({"src":"imgs/bestitem3-navy.jpg"});
 });
 
+$('.subaside a').click(function(){
+  $('.subaside a').removeClass()
+  $(this).addClass('on')
+})
+
+$('.subfilter a').click(function(){
+  $('.subfilter a').removeClass()
+  $(this).addClass('on')
+})
+
 });
 
 $(window).scroll(function(){ 
@@ -90,3 +100,5 @@ $(window).scroll(function(){
   }else if(height == 0){ 
     $('header').removeClass('fixed'); 
   }});
+
+  
