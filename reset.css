@@ -49,9 +49,6 @@ table {
 	border-spacing: 0;
 }
 a, a:visited{
- text-decoration: none;
-}
-
-a:visited{
   color: #808080;
+ text-decoration: none;
 }
