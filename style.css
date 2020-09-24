@@ -335,7 +335,7 @@ main{}
   transform: translateY(-50%);
   border-color: white;
   border-radius: 50%;
-  background: url(/imgs/rightarrow.png) no-repeat center center;
+  background: url(imgs/rightarrow.png) no-repeat center center;
   background-size: 1.4rem 2rem;
   z-index:10;
 }
