@@ -614,10 +614,7 @@ footer .about{
   justify-content: space-between;
   width: 120rem;
 }
-footer h3{
-  font-size:1.6rem;
-  margin-bottom:3rem;
-}
+
 footer h4 {
   font-family: 'NotoSansKR-Regular';
   font-size: 1.4rem;
@@ -628,6 +625,12 @@ footer li{
   font-size: 1.4rem;
   color: #808080;
   line-height: 2.2rem;
+}
+footer li:first-child{
+  margin-bottom:2.8rem;
+  font-family: 'BMJUA';
+  font-size:1.6rem;
+  color: #424242;
 }
 .sns{
   display: flex;
