@@ -1,0 +1,155 @@
+/* 반응형 */
+@media (max-width: 768px) {
+
+  nav,.event {display: none;}
+  body {padding-top: 7rem;
+  overflow-x:hidden; overflow-y: auto;}
+  header {height: 7rem;}
+
+  .logo {
+    padding-left: 1rem;
+    justify-content: start;
+  }
+
+  .trigger {
+    display: block;
+    width: 28px;
+    height: 20px;
+    position: absolute;
+    top: 24px;
+    right: 32px;
+    z-index: 10001;
+    cursor: pointer;
+  }
+
+  .trigger span {
+    position: absolute;
+    height: 1px;
+    background-color: black;
+    width: 100%;
+    transition: 0.3s;
+  }
+
+  .trigger span:nth-child(1) {
+    top: 0;
+  }
+
+  .trigger span:nth-child(2) {
+    top: 50%;
+  }
+
+  .trigger span:nth-child(3) {
+    top: 100%;
+  }
+
+  .trigger.active span {
+    background-color: #000000;
+  }
+
+  .trigger.active span:nth-child(1) {
+    top: 50%;
+    transform: rotate(45deg);
+  }
+
+  .trigger.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .trigger.active span:nth-child(3) {
+    top: 50%;
+    transform: rotate(-45deg);
+  }
+
+  .utility {
+    flex-direction: column;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    right: -240px;
+    width: 240px;
+    height: 100vh;
+    padding-right: 10px;
+    padding-top: 70px;
+    text-align: right;
+    box-sizing: border-box;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.14);
+    transition: 0.3s;
+    z-index: 100;
+  }
+
+  .utility.active {
+    right: 0;
+    z-index: 100;
+  }
+
+  .visual{
+    position: relative;
+    max-width: 100%;
+    z-index:10;
+  }
+  .visual a img{
+    max-width: 100%;
+    height: auto;
+  }
+  .visual.slick-initialized.slick-slider{
+    height: 4rem;
+  }
+  .item-btn{
+    margin-top:17rem;
+  }
+  .item-tabs{
+    overflow: hidden;
+    width: 100%;
+  }
+
+  .insight{
+    overflow: auto;
+  }
+
+  .wear-slider{
+   width:100%;
+  }
+  .wear-slider img{
+    padding: 0;
+    margin: 0;
+  }
+  .slick-initialized .slick-slide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .activity-slider p{
+    text-align: center;
+  }
+footer .footer-top{
+  margin:0;
+  width: 100%;
+  height: 18rem;
+}
+footer .about {
+  justify-content: center;
+  width: 100%;
+}
+footer .about ul{
+  display: none;
+}
+footer .about ul:first-child{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+footer .about ul:first-child li{
+  margin:0;
+}
+
+footer .footer-middle{
+  width: 100%;
+}
+
+footer .footer-bottom ul{
+  width: 100%;
+  margin:1rem;
+}
+}
